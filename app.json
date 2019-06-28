@@ -1,7 +1,7 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "33.0.0"
   },
-  
+
   "mode": "development"
 }

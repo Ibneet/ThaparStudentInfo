@@ -1,4 +1,4 @@
-import Expo from 'expo';
+import * as Expo from "expo";
 import React from "react";
 import { AppRegistry, Alert } from "react-native";
 import CustomMultiPicker from "react-native-multiple-select-list";
@@ -19,20 +19,19 @@ import {
   View
 } from "native-base";
 
-import { Theme, Styles } from '../../../appStyles.js'
+import { Theme, Styles } from "../../../appStyles.js";
 
 const categoryList = {
-  "122":"Architecture",
-  "123":"Computer Science",
-  "124":"Surveying",
-  "125":"Urban and Regional Planning"
-}
+  "122": "Architecture",
+  "123": "Computer Science",
+  "124": "Surveying",
+  "125": "Urban and Regional Planning"
+};
 
 const selectedCategories = [];
 
 export default class NewsCategories extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
@@ -41,9 +40,14 @@ export default class NewsCategories extends React.Component {
       <Container style={[Styles.ContainerStyle]}>
         <Header hasTabs style={Styles.HeaderStyle}>
           <Left>
-            <Button transparent onPress={() =>
-                this.props.navigation.navigate( 'News',  {feeds: selectedCategories} )
-              }>
+            <Button
+              transparent
+              onPress={() =>
+                this.props.navigation.navigate("News", {
+                  feeds: selectedCategories
+                })
+              }
+            >
               <Icon name="arrow-back" />
             </Button>
           </Left>
@@ -52,15 +56,15 @@ export default class NewsCategories extends React.Component {
           </Body>
           <Right />
         </Header>
-        <Content padder style={{backgroundColor: 'white'}}>
+        <Content padder style={{ backgroundColor: "white" }}>
           <CustomMultiPicker
             options={categoryList}
             search={true} // should show search bar?
             multiple={true} //
             placeholder={"Search"}
-            placeholderTextColor={'#757575'}
+            placeholderTextColor={"#757575"}
             returnValue={"label"} // label or value
-            callback={(res) => selectedCategories = res  } // callback, array of selected items
+            callback={res => (selectedCategories = res)} // callback, array of selected items
             rowBackgroundColor={"white"}
             rowHeight={40}
             rowRadius={5}
