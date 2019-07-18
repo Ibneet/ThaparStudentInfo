@@ -2,7 +2,7 @@ import { StackNavigator } from "react-navigation";
 import GradesSummary from "./GradesSummary.js";
 import GradesDetails from "./GradesDetails.js";
 
-export default LecturesScreen = StackNavigator(
+export default GradesScreen = StackNavigator(
     {
         GradesSummary: {
             screen: GradesSummary,

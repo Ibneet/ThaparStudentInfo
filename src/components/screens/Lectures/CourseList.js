@@ -3,7 +3,7 @@ import { Container, Header, Item, Input, Icon, Button, Text, Content, Left, Body
 
 import { DateOptions, Theme, Styles } from '../../../appStyles.js'
 import { SearchBar } from 'react-native-elements'
-import { View, FlatList, ListView, TouchableOpacity } from "react-native";
+import { View, FlatList, TouchableOpacity } from "react-native";
 
 const courseList = [
   {
@@ -34,7 +34,6 @@ export default class CourseList extends Component {
 
   constructor(props){
     super(props)
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
     this.state = {
         dataSource: courseList,
         text: '',

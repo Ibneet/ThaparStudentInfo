@@ -14,7 +14,7 @@ import {
 } from 'native-base';
 import { Theme, Styles } from '../../../appStyles.js';
 import { SearchBar } from 'react-native-elements';
-import { View, FlatList, ListView, TouchableOpacity } from "react-native";
+import { View, FlatList, TouchableOpacity } from "react-native";
 
 const saved_courses = {
   selected: 'SURVMAST',
@@ -60,8 +60,6 @@ export default class SavedCourses extends Component {
 
   constructor(props) {
     super(props);
-
-    this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     
     course_id = this.props.navigation.state.params.current_id,
     semester = this.props.navigation.state.params.semester,

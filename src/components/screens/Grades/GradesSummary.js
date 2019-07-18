@@ -75,7 +75,7 @@ const grades = [
   }
 ];
 
-export default class GradesDetails extends React.Component {
+export default class GradesSummary extends React.Component {
   constructor(props) {
     super(props);
   }

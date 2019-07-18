@@ -9,6 +9,7 @@ import PeopleScreen from '../screens/People/index.js';
 import LecturesScreen from '../screens/Lectures/index.js';
 import GradesScreen from '../screens/Grades/index.js';
 import ExamsScreen from '../screens/Exams/index.js'
+import CoursesScreen from '../screens/Courses/index.js'
 
 const AppNavigator = DrawerNavigator(
   {
@@ -30,6 +31,10 @@ const AppNavigator = DrawerNavigator(
     },
     Grades: {
       screen: GradesScreen,
+      navigationOptions: { header: false }
+    },
+    Courses: {
+      screen: CoursesScreen,
       navigationOptions: { header: false }
     },
 

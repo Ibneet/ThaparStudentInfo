@@ -17,7 +17,7 @@ import {
 } from "native-base";
 import Expo from 'expo'
 
-export default class NewsItem extends React.Component {
+export default class Person extends React.Component {
   constructor(props) {
     super(props);
   }

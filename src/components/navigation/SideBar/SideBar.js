@@ -39,7 +39,7 @@ const main_routes = [
     icon: {name: 'open-book', type: 'Entypo'}
   },
   {
-    title: 'Jobs',
+    title: 'Societies',
     icon: {name: 'work', type: 'MaterialIcons'}
   }
 ];
