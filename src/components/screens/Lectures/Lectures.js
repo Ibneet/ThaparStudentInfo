@@ -7,17 +7,16 @@ import {
   Button,
   Text,
   Container,
-  Card,
-  CardItem, Thumbnail,
   Body,
   Content,
   Header,
   Title,
   Left,
   Icon,
-  Right, Tab, Tabs, ScrollableTab, List, ListItem, Form, Item, Input
+  Right,
+  ListItem
 } from "native-base";
-import { DateOptions, Theme, Styles } from '../../../appStyles.js'
+import { Theme, Styles } from '../../../appStyles.js'
 import CalendarStrip from 'react-native-calendar-strip';
 
 

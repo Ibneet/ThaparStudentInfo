@@ -2,19 +2,17 @@ import React, { Component } from 'react';
 import {
   ActionSheet,
   Body, Button,
-  CheckBox, Container, Content, 
-  Form, Fab,
+  CheckBox, Container, Content,
   Header,
-  Icon, Item, Input,
+  Icon,
   List, Left, ListItem,
   Right,
   Segment, 
-  Title,Text,
-  Picker 
+  Title,Text
 } from 'native-base';
 import { Theme, Styles } from '../../../appStyles.js';
 import { SearchBar } from 'react-native-elements';
-import { View, FlatList, TouchableOpacity } from "react-native";
+import { View, FlatList } from "react-native";
 
 const saved_courses = {
   selected: 'SURVMAST',

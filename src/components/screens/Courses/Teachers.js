@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, TouchableOpacity,TouchableHighlight, Alert } from 'react-native';
-import { Container, Header, Item, Input, Icon, Button, Text, Content, Left, Body, Title, Right, Thumbnail, ListItem } from 'native-base';
-import { DateOptions, Theme, Styles } from '../../../appStyles.js'
-import Modal from 'react-native-modal'
-import { Ionicons } from '@expo/vector-icons'
+import { View, StyleSheet } from 'react-native';
+import { Container, Header, Icon, Button, Text, Left, Body, Title, Right } from 'native-base';
+import { Styles } from '../../../appStyles.js'
+
 export default class Teachers extends React.Component {
   render() {
     return(

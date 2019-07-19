@@ -1,11 +1,11 @@
 import { StackNavigator } from "react-navigation";
 
-import TimeTable from "./TimeTable.js";
+import Home from "./Home.js";
 
-export default TimeTableScreen = StackNavigator(
+export default HomeScreen = StackNavigator(
     {
-        TimeTable: {
-            screen: TimeTable,
+        Home: {
+            screen: Home,
             navigationOptions: { header: false }
         },
     },

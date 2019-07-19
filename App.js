@@ -16,7 +16,8 @@ export default class App extends React.Component {
     super();
     this.state = {
       isReady: false,
-      data: undefined
+      data: undefined,
+      loading: true
     };
   }
   async componentWillMount() {
@@ -25,6 +26,7 @@ export default class App extends React.Component {
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
       Ionicons: require("native-base/Fonts/Ionicons.ttf")
     });
+    this.setState({loading: false})
 
     if (config.mode === "development") {
       try {
@@ -70,7 +72,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    if (!this.state.isReady) {
+    if (!this.state.isReady || this.state.loading) {
       return <Expo.AppLoading />;
     }
     return <Navigator />;

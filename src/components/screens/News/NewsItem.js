@@ -1,19 +1,11 @@
 import React from "react";
-import { StatusBar, View, Image } from "react-native";
+import { View, Image } from "react-native";
 import TimeAgo from 'react-native-timeago';
 import {
-  Button,
   Text,
   Container,
-  Card,
-  CardItem,
-  Body,
   Content,
-  Header,
-  Title,
-  Left,
-  Icon,
-  Right
+  Icon
 } from "native-base";
 import Expo from 'expo'
 

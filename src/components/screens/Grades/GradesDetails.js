@@ -2,15 +2,11 @@ import React from "react";
 import {
   Animated,
   Dimensions,
-  FlatList,
-  StatusBar,
   View,
   Text,
-  Image,
   StyleSheet,
-  TouchableHighlight
 } from "react-native";
-import { Theme, Styles } from "../../../appStyles.js";
+import { Styles } from "../../../appStyles.js";
 
 import {
   Button,
@@ -20,14 +16,10 @@ import {
   Header,
   Icon,
   Left,
-  List,
   ListItem,
   Right,
-  Separator,
   Title
 } from "native-base";
-
-import * as Expo from "expo";
 
 const data = { pts: 50, ast: 100 };
 const chartPadding = 15;

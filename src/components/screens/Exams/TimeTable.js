@@ -1,14 +1,9 @@
 import React from "react";
 import {
-  StatusBar,
-  TouchableHighlight,
   View,
-  Image,
   AsyncStorage,
   StyleSheet
 } from "react-native";
-import TimeAgo from "react-native-timeago";
-import ModalWrapper from "react-native-modal-wrapper";
 import { Agenda } from "react-native-calendars";
 import {
   Button,
@@ -16,24 +11,17 @@ import {
   Container,
   Body,
   Header,
-  H1,
-  H2,
-  H3,
   Title,
   Left,
-  List,
   Icon,
   Right,
   Spinner
 } from "native-base";
-import Expo from "expo";
 import { Overlay } from "react-native-elements";
-import { Theme, Styles } from "../../../appStyles.js";
+import { Styles } from "../../../appStyles.js";
 import moment from "moment";
 
-import Modal from "react-native-modal";
-
-export default class Exams extends React.Component {
+export default class TimeTable extends React.Component {
   constructor(props) {
     super(props);
 
@@ -124,7 +112,7 @@ export default class Exams extends React.Component {
               </Button>
             </Left>
             <Body>
-              <Title>Exams</Title>
+              <Title>Time Table</Title>
             </Body>
             <Right />
           </Header>
@@ -161,7 +149,7 @@ export default class Exams extends React.Component {
           ]}
         >
           <Spinner />
-          <Text>Loading exams...</Text>
+          <Text>Loading Time Table...</Text>
         </View>
       );
     }

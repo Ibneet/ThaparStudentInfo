@@ -1,7 +1,5 @@
 import React from "react";
-import { AppRegistry, Image, StatusBar, View } from "react-native";
-
-import CustomMultiPicker from "react-native-multiple-select-list"
+import { Image, View } from "react-native";
 
 import {
   Button,
@@ -14,6 +12,10 @@ import {
 } from "native-base";
 
 const main_routes = [
+  {
+    title: 'Home',
+    icon: {name: 'home', type: 'Ionicons'}
+  },
   {
     title: 'News',
     icon: {name: 'rss-feed', type: 'MaterialIcons'}
@@ -31,7 +33,7 @@ const main_routes = [
     icon: {name: 'ios-school', type: 'Ionicons'}
   },
   {
-    title: 'Exams',
+    title: 'TimeTable',
     icon: {name: 'pencil-square', type: 'FontAwesome'}
   },
   {

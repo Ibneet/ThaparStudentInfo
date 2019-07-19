@@ -1,12 +1,7 @@
-import * as Expo from "expo";
 import React from "react";
-import { AppRegistry, Alert } from "react-native";
 import CustomMultiPicker from "react-native-multiple-select-list";
 import {
-  Text,
   Container,
-  Card,
-  CardItem,
   Body,
   Content,
   Header,
@@ -14,9 +9,7 @@ import {
   Right,
   Icon,
   Title,
-  Button,
-  H1,
-  View
+  Button
 } from "native-base";
 
 import { Theme, Styles } from "../../../appStyles.js";

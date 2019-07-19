@@ -1,11 +1,11 @@
 import { StackNavigator } from "react-navigation";
 
-import TimeTable from "./TimeTable.js";
+import Societies from "./Societies";
 
-export default TimeTableScreen = StackNavigator(
+export default SocietiesScreen = StackNavigator(
     {
-        TimeTable: {
-            screen: TimeTable,
+        Societies: {
+            screen: Societies,
             navigationOptions: { header: false }
         },
     },

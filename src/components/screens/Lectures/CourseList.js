@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Header, Item, Input, Icon, Button, Text, Content, Left, Body, Title, Right, Thumbnail, ListItem } from 'native-base';
+import { Container, Header, Icon, Button, Text, Content, Left, Body, Title, Right, Thumbnail, ListItem } from 'native-base';
 
-import { DateOptions, Theme, Styles } from '../../../appStyles.js'
+import { Theme, Styles } from '../../../appStyles.js'
 import { SearchBar } from 'react-native-elements'
-import { View, FlatList, TouchableOpacity } from "react-native";
+import { FlatList } from "react-native";
 
 const courseList = [
   {

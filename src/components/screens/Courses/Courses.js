@@ -1,12 +1,9 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, TouchableOpacity,TouchableHighlight, Alert, Linking } from 'react-native';
-import { Container, Header, Item, Input, Icon, Button, Text, Content, Left, Body, Title, Right, Thumbnail, ListItem } from 'native-base';
-import { DateOptions, Theme, Styles } from '../../../appStyles.js'
+import { View, StyleSheet, FlatList, TouchableHighlight, Linking } from 'react-native';
+import { Container, Header, Icon, Button, Text, Left, Body, Title, Right, ListItem } from 'native-base';
+import { Styles } from '../../../appStyles.js'
 import Modal from 'react-native-modal'
 import { Ionicons } from '@expo/vector-icons'
-
-const data = { pts: 50, ast: 100 };
-const chartPadding = 15;
 
 const subjects = [
   {

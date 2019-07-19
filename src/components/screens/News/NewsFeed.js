@@ -1,15 +1,12 @@
 import React from "react";
-import { StatusBar, View, Image, StyleSheet } from "react-native";
-import NewsItem from "./NewsItem.js";
-import { DateOptions, Theme, Styles } from "../../../appStyles.js";
+import { View, StyleSheet } from "react-native";
+import { Theme, Styles } from "../../../appStyles.js";
 import moment from "moment";
 
 import {
   Button,
   Text,
   Container,
-  Card,
-  CardItem,
   Thumbnail,
   Body,
   Content,
@@ -24,8 +21,6 @@ import {
   List,
   ListItem
 } from "native-base";
-
-import * as Expo from "expo";
 
 export default class NewsFeed extends React.Component {
   constructor(props) {
