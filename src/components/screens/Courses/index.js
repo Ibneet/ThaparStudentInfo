@@ -1,7 +1,6 @@
 import { StackNavigator } from "react-navigation";
 
 import Courses from "./Courses.js";
-import CLO from "./CLO.js";
 import Teachers from "./Teachers";
 import Prerequistics from "./Prerequistics";
 import Notes from "./Notes";
@@ -11,10 +10,6 @@ export default CoursesScreen = StackNavigator(
     {
         Courses: {
             screen: Courses,
-            navigationOptions: { header: false }
-        },
-        CLO: {
-            screen: CLO,
             navigationOptions: { header: false }
         },
         Teachers: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, FlatList, TouchableOpacity,TouchableHighlight, Alert } from 'react-native';
+import { View, StyleSheet, FlatList, TouchableOpacity,TouchableHighlight, Alert, Linking } from 'react-native';
 import { Container, Header, Item, Input, Icon, Button, Text, Content, Left, Body, Title, Right, Thumbnail, ListItem } from 'native-base';
 import { DateOptions, Theme, Styles } from '../../../appStyles.js'
 import Modal from 'react-native-modal'
@@ -11,12 +11,13 @@ const chartPadding = 15;
 const subjects = [
   {
     course_title: "Manufacturing Process",
-    course_id: "UTA002"
+    course_id: "UTA002",
+    course_site: 'https://sites.google.com/a/thapar.edu/thapar-uta002-manufacturing-processes/home'
   },
   {
     course_title: "Probability and Statistics",
-    course_id: "UCS408"
-    
+    course_id: "UCS408",
+    course_site: 'https://sites.google.com/a/thapar.edu/ucs408_pns/?pli=1'
   }
 ];
 
@@ -40,7 +41,8 @@ export default class Courses extends React.Component {
     super(props);
     this.state = {
       visibleModal: false,
-      id: ''
+      id: '',
+      site:''
     }
   }
 
@@ -71,8 +73,8 @@ export default class Courses extends React.Component {
             <Button
             style={styles.butt}
             full
-            onPress={()=>{this.props.navigation.navigate('CLO'),this.toggleModal(!this.state.visibleModal)}}>
-              <Text style={{color:'black'}}>Course Layout</Text>
+            onPress={()=>{ Linking.openURL(this.state.site),this.toggleModal(!this.state.visibleModal)}}>
+              <Text style={{color:'black'}}>Course Site</Text>
             </Button>
             <Button
             style={styles.butt}
@@ -125,7 +127,7 @@ export default class Courses extends React.Component {
               extraData={subjects}
               renderItem={({ item }) => (
                 <View>
-                  <ListItem onPress={() =>{this.toggleModal(true);this.setState({id:item.course_id})}}>
+                  <ListItem onPress={() =>{this.toggleModal(true);this.setState({id:item.course_id});this.setState({site:item.course_site})}}>
                         <Body>
                           <Text>{item.course_title}</Text>
                         </Body>

@@ -1,13 +1,15 @@
 import * as Expo from "expo";
 import { Container, StyleProvider, Content } from "native-base";
 import React from "react";
-import { StyleSheet, Text, View, AsyncStorage } from "react-native";
+import { StyleSheet, Text, View, AsyncStorage, YellowBox } from "react-native";
 
 import getTheme from "./native-base-theme/components";
 
 import Navigator from "./src/components/navigation/Navigation.js";
 import FakeDataStore from "./src/data/fakeDataStore.js";
 import config from "./config.js";
+
+YellowBox.ignoreWarnings(['ListView is deprecated']);
 
 export default class App extends React.Component {
   constructor() {
