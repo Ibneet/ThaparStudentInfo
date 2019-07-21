@@ -26,7 +26,7 @@ const features = [
     key: 'Teachers'
   },
   {
-    key: 'Prerequistics'
+    key: 'Prerequisites'
   },
   {
     key: 'Future Scope'
@@ -82,8 +82,8 @@ export default class Courses extends React.Component {
             <Button
             style={styles.butt}
             full
-            onPress={()=>{this.props.navigation.navigate('Prerequistics'),this.toggleModal(!this.state.visibleModal)}}>
-              <Text style={{color:'black'}}>Prerequistics</Text>
+            onPress={()=>{this.props.navigation.navigate('Prerequisites'),this.toggleModal(!this.state.visibleModal)}}>
+              <Text style={{color:'black'}}>Prerequisites</Text>
             </Button>
             <Button
             style={styles.butt}
@@ -108,7 +108,7 @@ export default class Courses extends React.Component {
             <Left>
                 <Button
                 transparent
-                onPress={() => this.props.navigation.navigate("DrawerOpen")}>
+                onPress={() => this.props.navigation.navigate("Navigation")}>
                 <Icon name="menu" />
                 </Button>
             </Left>

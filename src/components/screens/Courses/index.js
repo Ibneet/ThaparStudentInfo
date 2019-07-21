@@ -2,7 +2,7 @@ import { StackNavigator } from "react-navigation";
 
 import Courses from "./Courses.js";
 import Teachers from "./Teachers";
-import Prerequistics from "./Prerequistics";
+import Prerequisites from "./Prerequisites";
 import Notes from "./Notes";
 import FutureScope from "./FutureScope";
 
@@ -16,8 +16,8 @@ export default CoursesScreen = StackNavigator(
             screen: Teachers,
             navigationOptions: { header: false }
         },
-        Prerequistics: {
-            screen: Prerequistics,
+        Prerequisites: {
+            screen: Prerequisites,
             navigationOptions: { header: false }
         },
         Notes: {

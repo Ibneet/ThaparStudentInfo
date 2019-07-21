@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import { Container, Header, Icon, Button, Text, Left, Body, Title, Right } from 'native-base';
 import { Styles } from '../../../appStyles.js'
 
-export default class Prerequistics extends React.Component {
+export default class Prerequisites extends React.Component {
   render() {
     return(
         <Container style={Styles.ContainerStyle}>
@@ -14,13 +14,13 @@ export default class Prerequistics extends React.Component {
                 </Button>
             </Left>
             <Body>
-                <Title>Prerequistics</Title>
+                <Title>Prerequisites</Title>
             </Body>
             <Right />
             </Header>  
             <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View style={styles.container1}>
-                <Text>Prerequistics</Text>
+                <Text>Prerequisites</Text>
             </View>
             </View>
         </Container>
