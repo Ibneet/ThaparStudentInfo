@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  View,
-  AsyncStorage,
-  StyleSheet
-} from "react-native";
+import { View, AsyncStorage, StyleSheet } from "react-native";
 import { Agenda } from "react-native-calendars";
 import {
   Button,
@@ -104,9 +100,12 @@ export default class TimeTable extends React.Component {
         <Container style={Styles.ContainerStyle}>
           <Header hasTabs style={Styles.HeaderStyle}>
             <Left>
-            <Button transparent onPress={() => this.props.navigation.navigate('SideBar')}>
-              <Icon name="arrow-back" />
-            </Button>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.navigate("SideBar")}
+              >
+                <Icon name="arrow-back" />
+              </Button>
             </Left>
             <Body>
               <Title>Time Table</Title>

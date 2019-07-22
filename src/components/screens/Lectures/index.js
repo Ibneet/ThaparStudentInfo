@@ -1,25 +1,25 @@
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import Lectures from "./Lectures.js";
 import SavedCourses from "./SavedCourses.js";
-import CourseList from "./CourseList.js"
+import CourseList from "./CourseList.js";
 
-export default LecturesScreen = StackNavigator(
-    {
-      Lectures: {
-        screen: Lectures,
-        navigationOptions: { header: false }
-       },
-       SavedCourses: {
-         screen: SavedCourses,
-         navigationOptions: { header: false }
-        },
-        CourseList: {
-        screen: CourseList,
-        navigationOptions: { header: false }
-      },
+export default (LecturesScreen = createStackNavigator(
+  {
+    Lectures: {
+      screen: Lectures,
+      navigationOptions: { header: null }
     },
-    {
-        headerMode: 'screen',
+    SavedCourses: {
+      screen: SavedCourses,
+      navigationOptions: { header: null }
+    },
+    CourseList: {
+      screen: CourseList,
+      navigationOptions: { header: null }
     }
-);
+  },
+  {
+    headerMode: "screen"
+  }
+));

@@ -1,15 +1,15 @@
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import Profile from "./Profile";
 
-export default ProfileScreen = StackNavigator(
-    {
-        Profile: {
-            screen: Profile,
-            navigationOptions: { header: false }
-        },
-    },
-    {
-        headerMode: 'screen',
+export default (ProfileScreen = createStackNavigator(
+  {
+    Profile: {
+      screen: Profile,
+      navigationOptions: { header: null }
     }
-);
+  },
+  {
+    headerMode: "screen"
+  }
+));

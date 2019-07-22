@@ -1,15 +1,17 @@
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import Home from "./Home.js";
-
-export default HomeScreen = StackNavigator(
-    {
-        Home: {
-            screen: Home,
-            navigationOptions: { header: false }
-        },
-    },
-    {
-        headerMode: 'screen',
+var navigationOptions = {
+  header: null
+};
+export default (HomeScreen = createStackNavigator(
+  {
+    Home: {
+      screen: Home,
+      navigationOptions: navigationOptions
     }
-);
+  },
+  {
+    headerMode: "float"
+  }
+));

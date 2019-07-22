@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FlatList,
-  View,
-  Text
-} from "react-native";
+import { FlatList, View, Text } from "react-native";
 import { Theme, Styles } from "../../../appStyles.js";
 
 import {
@@ -75,7 +71,10 @@ export default class GradesSummary extends React.Component {
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
           <Left>
-          <Button transparent onPress={() => this.props.navigation.navigate('SideBar')}>
+            <Button
+              transparent
+              onPress={() => this.props.navigation.navigate("SideBar")}
+            >
               <Icon name="arrow-back" />
             </Button>
           </Left>

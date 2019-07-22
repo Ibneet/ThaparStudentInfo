@@ -40,7 +40,7 @@
     "react-native-search-box": "^0.0.16",
     "react-native-search-header": "^0.2.6",
     "react-native-timeago": "^0.4.0",
-    "react-navigation": "^1.5.11",
+    "react-navigation": "^3.11.1",
     "react-navigation-tabs": "^2.2.0"
   }
 }

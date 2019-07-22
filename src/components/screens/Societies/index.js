@@ -1,15 +1,15 @@
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import Societies from "./Societies";
 
-export default SocietiesScreen = StackNavigator(
-    {
-        Societies: {
-            screen: Societies,
-            navigationOptions: { header: false }
-        },
-    },
-    {
-        headerMode: 'screen',
-    },
-);
+export default (SocietiesScreen = createStackNavigator(
+  {
+    Societies: {
+      screen: Societies,
+      navigationOptions: { header: null }
+    }
+  },
+  {
+    headerMode: "screen"
+  }
+));

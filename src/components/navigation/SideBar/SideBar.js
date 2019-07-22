@@ -13,78 +13,70 @@ import {
 
 const main_routes = [
   {
-    title: 'Home',
-    icon: {name: 'home', type: 'Ionicons'}
+    title: "Home",
+    icon: { name: "home", type: "Ionicons" }
   },
   {
-    title: 'News',
-    icon: {name: 'rss-feed', type: 'MaterialIcons'}
+    title: "News",
+    icon: { name: "rss-feed", type: "MaterialIcons" }
   },
   {
-    title: 'People',
-    icon: {name: 'ios-people', type: 'Ionicons'}
+    title: "People",
+    icon: { name: "ios-people", type: "Ionicons" }
   },
   {
-    title: 'Lectures',
-    icon: {name: 'chair-school', type: 'MaterialCommunityIcons'}
+    title: "Lectures",
+    icon: { name: "chair-school", type: "MaterialCommunityIcons" }
   },
   {
-    title: 'Grades',
-    icon: {name: 'ios-school', type: 'Ionicons'}
+    title: "Grades",
+    icon: { name: "ios-school", type: "Ionicons" }
   },
   {
-    title: 'TimeTable',
-    icon: {name: 'pencil-square', type: 'FontAwesome'}
+    title: "TimeTable",
+    icon: { name: "pencil-square", type: "FontAwesome" }
   },
   {
-    title: 'Courses',
-    icon: {name: 'open-book', type: 'Entypo'}
+    title: "Courses",
+    icon: { name: "open-book", type: "Entypo" }
   },
   {
-    title: 'Societies',
-    icon: {name: 'work', type: 'MaterialIcons'}
+    title: "Societies",
+    icon: { name: "work", type: "MaterialIcons" }
   }
 ];
 
 const other_routes = [
-
   {
-    title: 'Settings',
-    icon: {name: 'cog', type: 'Ionicons'}
+    title: "Settings",
+    icon: { name: "cog", type: "Ionicons" }
   },
   {
-    title: 'Feedback',
-    icon: {name: 'feedback', type: 'MaterialIcons'}
+    title: "Feedback",
+    icon: { name: "feedback", type: "MaterialIcons" }
   },
   {
-    title: 'Legal Notice',
-    icon: {name: 'legal', type: 'FontAwesome'}
-  },
-]
+    title: "Legal Notice",
+    icon: { name: "legal", type: "FontAwesome" }
+  }
+];
 
 const userList = {
-  "123":"Tom",
-  "124":"Michael",
-  "125":"Christin"
-}
-
+  "123": "Tom",
+  "124": "Michael",
+  "125": "Christin"
+};
 
 export default class SideBar extends React.Component {
-
-
-  constructor(props){
+  constructor(props) {
     super(props);
-
   }
 
-
-
-componentDidMount() {
-  console.log('Side Bar did mount')
-}
+  componentDidMount() {
+    console.log("Side Bar did mount");
+  }
 
   render() {
-
     return (
       <Container>
         <Content>
@@ -122,9 +114,8 @@ componentDidMount() {
     );
   }
 
-
-  renderList(list, marginTop){
-    return(
+  renderList(list, marginTop) {
+    return (
       <List
         dataArray={list}
         contentContainerStyle={{ marginTop: marginTop }}
@@ -133,15 +124,20 @@ componentDidMount() {
             <ListItem
               button
               onPress={() => this.props.navigation.navigate(data.title)}
-              style={{borderBottomWidth: 0}} >
-              <View style={{flexDirection:'row', alignItems: 'center'}}>
-                <Icon name={data.icon.name} type={data.icon.type} style={{color:'gray', fontSize: 18, marginRight: 18}}/>
-                <Text >{data.title} </Text>
+              style={{ borderBottomWidth: 0 }}
+            >
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Icon
+                  name={data.icon.name}
+                  type={data.icon.type}
+                  style={{ color: "gray", fontSize: 18, marginRight: 18 }}
+                />
+                <Text>{data.title} </Text>
               </View>
             </ListItem>
           );
         }}
       />
-    )
+    );
   }
 }

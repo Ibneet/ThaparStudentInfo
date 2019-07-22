@@ -1,71 +1,80 @@
 import React from "react";
-import { TabNavigator } from "react-navigation";
-import {Footer} from 'native-base'
+import {
+  createBottomTabNavigator,
+  createDrawerNavigator,
+  createStackNavigator,
+  createMaterialTopTabNavigator,
+  createAppContainer
+} from "react-navigation";
+import { Footer } from "native-base";
 import SideBar from "./SideBar/SideBar.js";
 import { Root } from "native-base";
-import TabBar from './TabBar/TabBar.js'
-import NewsScreen from '../screens/News/index.js';
-import HomeScreen from '../screens/Home/index.js'
-import SocietiesScreen from '../screens/Societies/index.js'
-import Drawer from './Drawer'
-import CampusOverflowScreen from '../screens/CampusOverflow/index.js'
-import ProfileScreen from '../screens/Profile/index.js'
+import TabBar from "./TabBar/TabBar.js";
+import NewsScreen from "../screens/News/index.js";
+import HomeScreen from "../screens/Home/index.js";
+import SocietiesScreen from "../screens/Societies/index.js";
+// import Drawer from "./Drawer";
+import CampusOverflowScreen from "../screens/CampusOverflow/index.js";
+import ProfileScreen from "../screens/Profile/index.js";
 
-const AppNavigator = TabNavigator(
+const Tabs = createBottomTabNavigator(
   {
-   
-    Home: {
-      screen: HomeScreen
-    },
-    News: {
-      screen: NewsScreen
-    },
-    Drawer: {
-      screen: Drawer,
-    },
-    CampusOverflow: {
-      screen: CampusOverflowScreen
-    },
-    Profile: {
-      screen: ProfileScreen
-    }
-    
-    // Exams: {
-    //   screen: TimeTableScreen,
+    Home: HomeScreen,
+    News: NewsScreen,
+    // Drawer: {
+    //   screen: Drawer
     // },
-    // News: {
-    //   screen: NewsScreen,
-    // },
-    // People: {
-    //   screen: PeopleScreen,
-    // },
-    // Lectures: {
-    //   screen: LecturesScreen,
-    // },
-    // Grades: {
-    //   screen: GradesScreen,
-    // },
-    // Courses: {
-    //   screen: CoursesScreen,
-    // },
-    // Societies: {
-    //   screen: SocietiesScreen,
-    // },
-   
+    CampusOverflow: CampusOverflowScreen,
+    Profile: ProfileScreen
   },
   {
-    tabBarPosition: 'bottom',
-    tabBarComponent: props => <TabBar {...props} />,
-    swipeEnabled: false
+    tabBarComponent: TabBar,
+    tabBarOptions: {
+      activeTintColor: "#000",
+      inactiveTintColor: "gray",
+      style: {
+        backgroundColor: "#fff"
+      },
+      indicatorStyle: {
+        backgroundColor: "#000"
+      }
+    }
   }
 );
 
-export default class Navigation extends React.Component{
-  render(){
-    return(
+const DrawerNavigator = createDrawerNavigator(
+  {
+    Home: {
+      screen: Tabs
+    }
+  },
+  {
+    initialRouteName: "Home",
+    contentComponent: SideBar,
+    drawerWidth: 300,
+    hideStatusBar: true
+  }
+);
+const AppNavigator = createStackNavigator(
+  {
+    DrawerNavigator: {
+      screen: DrawerNavigator
+    }
+  },
+  {
+    navigationOptions: {
+      header: null
+    }
+  }
+);
+
+const AppContainer = createAppContainer(AppNavigator);
+export default class Navigation extends React.Component {
+  render() {
+    return (
       <Root>
-        <AppNavigator />
+        <AppContainer />
       </Root>
-    )
+    );
   }
 }

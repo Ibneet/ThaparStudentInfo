@@ -1,20 +1,20 @@
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import People from "./People.js";
 import Person from "./Person.js";
 
-export default PeopleScreen = StackNavigator(
-    {
-      People: {
-        screen: People,
-        navigationOptions: { header: false }
-       },
-       Person: {
-         screen: Person,
-         navigationOptions: { header: false }
-        }
+export default (PeopleScreen = createStackNavigator(
+  {
+    People: {
+      screen: People,
+      navigationOptions: { header: null }
     },
-    {
-        headerMode: 'screen',
+    Person: {
+      screen: Person,
+      navigationOptions: { header: null }
     }
-);
+  },
+  {
+    headerMode: "screen"
+  }
+));

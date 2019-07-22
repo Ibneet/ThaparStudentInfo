@@ -19,7 +19,7 @@ export const Styles = StyleSheet.create({
     backgroundColor: Theme.primaryColor
   },
   ContainerStyle: {
-    paddingTop: Expo.Constants.statusBarHeight,
+    // paddingTop: Expo.Constants.statusBarHeight,
     backgroundColor: Theme.primaryColor,
     flex: 1
   },
