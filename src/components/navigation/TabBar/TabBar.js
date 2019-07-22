@@ -27,7 +27,7 @@ const main_routes = [
   },
   {
     title: 'Quora',
-    icon: {name: 'globe', type: 'Ionicons'}
+    icon: {name: 'planet', type: 'Ionicons'}
   },
   
   {

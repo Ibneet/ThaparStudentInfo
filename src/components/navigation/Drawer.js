@@ -3,6 +3,12 @@ import React from "react";
 import Home from "../screens/Home/index";
 import Societies from "../screens/Societies/index.js";
 import SideBar from "./SideBar/SideBar.js";
+import TimeTableScreen from '../screens/Exams/index.js'
+import NewsScreen from '../screens/News/index.js'
+import PeopleScreen from '../screens/People/index.js'
+import LecturesScreen from '../screens/Lectures/index.js'
+import CoursesScreen from '../screens/Courses/index.js'
+import GradesScreen from '../screens/Grades/index.js'
 
 export default Drawer = DrawerNavigator(
     {
