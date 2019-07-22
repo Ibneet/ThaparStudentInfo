@@ -14,8 +14,8 @@ import {
 
 const main_routes = [
   {
-    title: 'Profile',
-    icon: {name: 'person', type: 'Ionicons'}
+    title: 'SideBar',
+    icon: {name: 'menu', type: 'Ionicons'}
   },
   {
     title: 'News',
@@ -29,9 +29,10 @@ const main_routes = [
     title: 'Quora',
     icon: {name: 'globe', type: 'Ionicons'}
   },
+  
   {
-    title: 'SideBar',
-    icon: {name: 'menu', type: 'Ionicons'}
+    title: 'Profile',
+    icon: {name: 'person', type: 'Ionicons'}
   },
 ];
 
@@ -52,7 +53,7 @@ componentDidMount() {
   render() {
 
     return (
-      <Container style={{justifyContent:'center',alignItems:'center', flex:0.06, backgroundColor: '#E91E63'}}>
+      <Container style={{justifyContent:'center',alignItems:'center', flex:0.067, backgroundColor: '#E91E63', paddingBottom:10}}>
         <View style={{ alignItems: 'center'}}>
             {this.Tab()}
         </View>
@@ -70,7 +71,7 @@ componentDidMount() {
               renderItem={({ item }) => (
                 <View>
                   <ListItem onPress={() =>this.props.navigation.navigate(item.title)}>
-                    <Icon name={item.icon.name} type={item.icon.type} style={{color:'white', fontSize: 22, marginRight: 18}}/>
+                    <Icon name={item.icon.name} type={item.icon.type} style={{color:'white', fontSize: 26, marginRight: 18}}/>
                   </ListItem>
                     
                   
