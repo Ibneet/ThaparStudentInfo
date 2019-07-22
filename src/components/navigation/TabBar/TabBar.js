@@ -26,7 +26,7 @@ const main_routes = [
     icon: {name: 'home', type: 'Ionicons'}
   },
   {
-    title: 'Quora',
+    title: 'CampusOverflow',
     icon: {name: 'planet', type: 'Ionicons'}
   },
   
