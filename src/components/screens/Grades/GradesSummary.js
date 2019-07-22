@@ -75,11 +75,8 @@ export default class GradesSummary extends React.Component {
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
           <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
-            >
-              <Icon name="menu" />
+          <Button transparent onPress={() => this.props.navigation.navigate('SideBar')}>
+              <Icon name="arrow-back" />
             </Button>
           </Left>
           <Body>

@@ -106,11 +106,9 @@ export default class Courses extends React.Component {
         <Container style={Styles.ContainerStyle}>
             <Header hasTabs style={Styles.HeaderStyle}>
             <Left>
-                <Button
-                transparent
-                onPress={() => this.props.navigation.navigate("Navigation")}>
-                <Icon name="menu" />
-                </Button>
+            <Button transparent onPress={() => this.props.navigation.navigate('SideBar')}>
+              <Icon name="arrow-back" />
+            </Button>
             </Left>
             <Body>
                 <Title>Courses</Title>

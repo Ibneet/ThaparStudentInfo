@@ -9,13 +9,7 @@ export default class Courses extends React.Component {
     return(
         <Container style={Styles.ContainerStyle}>
             <Header hasTabs style={Styles.HeaderStyle}>
-            <Left>
-                <Button
-                transparent
-                onPress={() => this.props.navigation.navigate("DrawerOpen")}>
-                <Icon name="menu" />
-                </Button>
-            </Left>
+            <Left/>
             <Body>
                 <Title>Home</Title>
             </Body>
