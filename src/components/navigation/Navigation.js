@@ -8,7 +8,7 @@ import NewsScreen from '../screens/News/index.js';
 import HomeScreen from '../screens/Home/index.js'
 import SocietiesScreen from '../screens/Societies/index.js'
 import Drawer from './Drawer'
-import CampusOverflow from '../screens/CampusOverflow/index.js'
+import CampusOverflowScreen from '../screens/CampusOverflow/index.js'
 import ProfileScreen from '../screens/Profile/index.js'
 
 const AppNavigator = TabNavigator(
@@ -24,7 +24,7 @@ const AppNavigator = TabNavigator(
       screen: Drawer,
     },
     CampusOverflow: {
-      screen: CampusOverflow
+      screen: CampusOverflowScreen
     },
     Profile: {
       screen: ProfileScreen

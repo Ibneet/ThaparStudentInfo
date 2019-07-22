@@ -2,9 +2,9 @@ import { StackNavigator } from "react-navigation";
 
 import CampusOverflow from "./CampusOverflow";
 
-export default HomeScreen = StackNavigator(
+export default CampusOverflowScreen = StackNavigator(
     {
-        Home: {
+        CampusOverflow: {
             screen: CampusOverflow,
             navigationOptions: { header: false }
         },
