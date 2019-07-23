@@ -26,7 +26,10 @@ const Tabs = createBottomTabNavigator(
     Profile: ProfileScreen
   },
   {
-    // tabBarComponent: props => <TabBar {...props} />
+    tabBarComponent: props => <TabBar {...props} />,
+    navigationOptions: {
+      header: null
+    }
   }
 );
 
@@ -40,7 +43,10 @@ const DrawerNavigator = createDrawerNavigator(
     initialRouteName: "Home",
     contentComponent: SideBar,
     drawerWidth: 300,
-    hideStatusBar: true
+    hideStatusBar: true,
+    navigationOptions: {
+      header: null
+    }
   }
 );
 const AppNavigator = createStackNavigator(
