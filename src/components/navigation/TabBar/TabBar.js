@@ -14,7 +14,7 @@ import {
 
 const main_routes = [
   {
-    title: "Societies",
+    title: "ABCD",
     icon: { name: "globe", type: "Ionicons" }
   },
   {
@@ -52,7 +52,7 @@ export default class TabBar extends React.Component {
           // justifyContent: "center",
           // alignItems: "center",
           flex: 0.067,
-          backgroundColor: "#E91E63",
+          backgroundColor: "#5C1653",
           paddingBottom: 5
         }}
       >

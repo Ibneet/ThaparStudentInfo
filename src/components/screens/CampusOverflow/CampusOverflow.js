@@ -18,7 +18,18 @@ export default class CampusOverflow extends React.Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
+        <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.openDrawer()}
+              >
+                <Icon name="menu" />
+              </Button>
+              </Left>
+            
             <Title>Campus Overflow</Title>
+           
+            <Right/>
         </Header>
         <View
           style={{

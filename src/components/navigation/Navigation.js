@@ -19,6 +19,7 @@ import NewsScreen from "../screens/News/index.js";
 import PeopleScreen from "../screens/People/index.js";
 import LecturesScreen from "../screens/Lectures/index.js";
 import GradesScreen from "../screens/Grades/index.js";
+import ABCDScreen from "../screens/ABCD/index.js";
 
 const Tabs = createBottomTabNavigator(
   {
@@ -31,7 +32,8 @@ const Tabs = createBottomTabNavigator(
     Exams: TimeTableScreen,
     People: PeopleScreen,
     Lectures: LecturesScreen,
-    Grades: GradesScreen
+    Grades: GradesScreen,
+    ABCD: ABCDScreen
   },
   {
     tabBarComponent: props => <TabBar {...props} />,

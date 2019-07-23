@@ -147,7 +147,17 @@ export default class Schedule extends Component {
       <Container style={Styles.ContainerStyle}>
 
         <Header hasTabs style={Styles.HeaderStyle}>
+        <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.openDrawer()}
+              >
+                <Icon name="menu" />
+              </Button>
+              </Left>
+            <Body>
             <Title>Lectures</Title>
+            </Body>
           <Right>
             <Button
               transparent

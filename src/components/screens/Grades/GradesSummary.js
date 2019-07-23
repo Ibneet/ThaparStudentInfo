@@ -70,7 +70,18 @@ export default class GradesSummary extends React.Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
+        <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.openDrawer()}
+              >
+                <Icon name="menu" />
+              </Button>
+              </Left>
+            <Body>
             <Title>Grades</Title>
+            </Body>
+            <Right/>
         </Header>
 
         <View style={{ backgroundColor: "white", flex: 1 }}>

@@ -99,9 +99,18 @@ export default class TimeTable extends React.Component {
       return (
         <Container style={Styles.ContainerStyle}>
           <Header hasTabs style={Styles.HeaderStyle}>
-                <Icon name="arrow-back" />
-              <Title>Time Table</Title>
-            <Right />
+          <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.openDrawer()}
+              >
+                <Icon name="menu" />
+              </Button>
+              </Left>
+            <Body>
+            <Title>Time Table</Title>
+            </Body>
+            <Right/>
           </Header>
 
           <Agenda

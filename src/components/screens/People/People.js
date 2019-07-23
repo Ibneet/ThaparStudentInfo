@@ -77,7 +77,18 @@ export default class People extends Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
-            <Title>People</Title>
+          <Left>
+                <Button
+                  transparent
+                  onPress={() => this.props.navigation.openDrawer()}
+                >
+                  <Icon name="menu" />
+                </Button>
+                </Left>
+              <Body>
+              <Title>People</Title>
+              </Body>
+              <Right/>
         </Header>
 
         {people === undefined || people === null || people.length < 1 ?

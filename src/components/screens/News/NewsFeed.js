@@ -42,10 +42,17 @@ export default class NewsFeed extends React.Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
-          <Left/>
-          <Left/>
-          <Left/>
+        <Left>
+              <Button
+                transparent
+                onPress={() => this.props.navigation.openDrawer()}
+              >
+                <Icon name="menu" />
+              </Button>
+              </Left>
+            <Body>
             <Title>My Notifications</Title>
+            </Body>
           <Right>
             <Button
               transparent
