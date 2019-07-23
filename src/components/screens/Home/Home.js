@@ -23,7 +23,7 @@ export default class Courses extends React.Component {
                 transparent
                 onPress={() => this.props.navigation.openDrawer()}
               >
-                <Icon name="menu" />
+               <Icon name= "menu"/>
               </Button>
               </Left>
             <Body>
@@ -34,7 +34,7 @@ export default class Courses extends React.Component {
         <View
           style={{
             flex: 1,
-            backgroundColor: "white",
+            backgroundColor: "black",
             alignItems: "center",
             justifyContent: "center"
           }}
