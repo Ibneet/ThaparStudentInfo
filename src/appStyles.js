@@ -1,5 +1,5 @@
 import * as Expo from "expo";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export const Theme = {
   primaryColor: "#E91E63"
@@ -16,7 +16,10 @@ export const DateOptions = {
 
 export const Styles = StyleSheet.create({
   HeaderStyle: {
-    backgroundColor: Theme.primaryColor
+    backgroundColor: Theme.primaryColor,
+    height: Platform.OS === 'android' ? 90 : 'default',
+    paddingTop: Platform.OS === 'android' ? 30 : 'default',
+    alignItems:Platform.OS === 'android' ? 'center' : 'default',
   },
   ContainerStyle: {
     // paddingTop: Expo.Constants.statusBarHeight,

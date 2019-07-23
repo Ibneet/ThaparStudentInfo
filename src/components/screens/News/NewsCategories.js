@@ -44,9 +44,9 @@ export default class NewsCategories extends React.Component {
               <Icon name="arrow-back" />
             </Button>
           </Left>
-          <Body>
+          <Left/>
+          <Left/>
             <Title>Categories</Title>
-          </Body>
           <Right />
         </Header>
         <Content padder style={{ backgroundColor: "white" }}>

@@ -140,18 +140,7 @@ export default class Courses extends React.Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
-          <Left>
-            <Button
-              transparent
-              onPress={() => this.props.navigation.navigate("SideBar")}
-            >
-              <Icon name="arrow-back" />
-            </Button>
-          </Left>
-          <Body>
             <Title>Courses</Title>
-          </Body>
-          <Right />
         </Header>
         <View style={{ flex: 1, backgroundColor: "white" }}>
           <FlatList

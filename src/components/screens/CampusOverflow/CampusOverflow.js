@@ -18,11 +18,7 @@ export default class CampusOverflow extends React.Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
-          <Left />
-          <Body>
             <Title>Campus Overflow</Title>
-          </Body>
-          <Right />
         </Header>
         <View
           style={{

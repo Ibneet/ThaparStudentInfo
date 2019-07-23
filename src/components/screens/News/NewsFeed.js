@@ -43,9 +43,9 @@ export default class NewsFeed extends React.Component {
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
           <Left/>
-          <Body>
+          <Left/>
+          <Left/>
             <Title>My Notifications</Title>
-          </Body>
           <Right>
             <Button
               transparent

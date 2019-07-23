@@ -9,11 +9,7 @@ export default class Courses extends React.Component {
     return(
         <Container style={Styles.ContainerStyle}>
             <Header hasTabs style={Styles.HeaderStyle}>
-            <Left/>
-            <Body>
                 <Title>My Profile</Title>
-            </Body>
-            <Right />
             </Header>  
             <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Profile Screen</Text>

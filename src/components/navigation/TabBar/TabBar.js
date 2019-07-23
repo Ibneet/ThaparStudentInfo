@@ -26,7 +26,7 @@ const main_routes = [
     icon: { name: "home", type: "Ionicons" }
   },
   {
-    title: "Quora",
+    title: "CampusOverflow",
     icon: { name: "planet", type: "Ionicons" }
   },
 
@@ -47,17 +47,17 @@ export default class TabBar extends React.Component {
 
   render() {
     return (
-      <Container
+      <View
         style={{
-          justifyContent: "center",
-          alignItems: "center",
+          // justifyContent: "center",
+          // alignItems: "center",
           flex: 0.067,
           backgroundColor: "#E91E63",
-          paddingBottom: 10
+          paddingBottom: 5
         }}
       >
-        <View style={{ alignItems: "center" }}>{this.Tab()}</View>
-      </Container>
+        <View>{this.Tab()}</View>
+      </View>
     );
   }
 
@@ -75,7 +75,7 @@ export default class TabBar extends React.Component {
               <Icon
                 name={item.icon.name}
                 type={item.icon.type}
-                style={{ color: "white", fontSize: 26, marginRight: 18 }}
+                style={{ color: "white", fontSize: 26, marginHorizontal: 6 }}
               />
             </ListItem>
           </View>

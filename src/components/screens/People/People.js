@@ -77,14 +77,7 @@ export default class People extends Component {
     return (
       <Container style={Styles.ContainerStyle}>
         <Header hasTabs style={Styles.HeaderStyle}>
-          <Left>
-          <Button transparent onPress={() => this.props.navigation.navigate('SideBar')}>
-              <Icon name="arrow-back" />
-            </Button>
-          </Left>
-          <Body>
             <Title>People</Title>
-          </Body>
         </Header>
 
         {people === undefined || people === null || people.length < 1 ?

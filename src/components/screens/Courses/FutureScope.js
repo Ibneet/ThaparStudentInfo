@@ -17,6 +17,17 @@ export default class FutureScope extends React.Component {
   render() {
     return (
       <Container style={Styles.ContainerStyle}>
+        <Header hasTabs style={Styles.HeaderStyle}>
+          <Left>
+            <Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Future Scope</Title>
+          </Body>
+          <Right />
+        </Header>
         <View style={{ flex: 1, backgroundColor: "white" }}>
           <View style={styles.container1}>
             <Text>Future Scope</Text>

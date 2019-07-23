@@ -13,14 +13,6 @@ import {
 
 const main_routes = [
   {
-    title: "Home",
-    icon: { name: "home", type: "Ionicons" }
-  },
-  {
-    title: "News",
-    icon: { name: "rss-feed", type: "MaterialIcons" }
-  },
-  {
     title: "People",
     icon: { name: "ios-people", type: "Ionicons" }
   },

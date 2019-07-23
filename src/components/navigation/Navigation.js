@@ -3,19 +3,22 @@ import {
   createBottomTabNavigator,
   createDrawerNavigator,
   createStackNavigator,
-  createMaterialTopTabNavigator,
   createAppContainer
 } from "react-navigation";
 import { Footer, Icon } from "native-base";
 import SideBar from "./SideBar/SideBar.js";
 import { Root } from "native-base";
 import TabBar from "./TabBar/TabBar.js";
-import NewsScreen from "../screens/News/index.js";
 import HomeScreen from "../screens/Home/index.js";
 import SocietiesScreen from "../screens/Societies/index.js";
-// import Drawer from "./Drawer";
 import CampusOverflowScreen from "../screens/CampusOverflow/index.js";
 import ProfileScreen from "../screens/Profile/index.js";
+import CoursesScreen from "../screens/Courses/index.js";
+import TimeTableScreen from "../screens/Exams/index.js";
+import NewsScreen from "../screens/News/index.js";
+import PeopleScreen from "../screens/People/index.js";
+import LecturesScreen from "../screens/Lectures/index.js";
+import GradesScreen from "../screens/Grades/index.js";
 
 const Tabs = createBottomTabNavigator(
   {
@@ -23,7 +26,12 @@ const Tabs = createBottomTabNavigator(
     News: NewsScreen,
     Societies: SocietiesScreen,
     CampusOverflow: CampusOverflowScreen,
-    Profile: ProfileScreen
+    Profile: ProfileScreen,
+    Courses: CoursesScreen,
+    Exams: TimeTableScreen,
+    People: PeopleScreen,
+    Lectures: LecturesScreen,
+    Grades: GradesScreen
   },
   {
     tabBarComponent: props => <TabBar {...props} />,
