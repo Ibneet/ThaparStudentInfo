@@ -52,7 +52,7 @@ export default class TabBar extends React.Component {
           // justifyContent: "center",
           // alignItems: "center",
           flex: 0.067,
-          backgroundColor: "#5C1653",
+          backgroundColor: "#333945",
           paddingBottom: 5
         }}
       >
