@@ -67,6 +67,7 @@ export default class TabBar extends React.Component {
         keyExtractor={(item, index) => index.toString()}
         data={main_routes}
         numColumns={5}
+        scrollEnabled={false}
         renderItem={({ item }) => (
           <View>
             <ListItem
@@ -75,7 +76,7 @@ export default class TabBar extends React.Component {
               <Icon
                 name={item.icon.name}
                 type={item.icon.type}
-                style={{ color: "white", fontSize: 26, marginHorizontal: 6 }}
+                style={{ color: "white", fontSize: 26, marginRight: 18 }}
               />
             </ListItem>
           </View>
