@@ -6,7 +6,7 @@ import {
   createMaterialTopTabNavigator,
   createAppContainer
 } from "react-navigation";
-import { Footer } from "native-base";
+import { Footer, Icon } from "native-base";
 import SideBar from "./SideBar/SideBar.js";
 import { Root } from "native-base";
 import TabBar from "./TabBar/TabBar.js";
@@ -21,24 +21,12 @@ const Tabs = createBottomTabNavigator(
   {
     Home: HomeScreen,
     News: NewsScreen,
-    // Drawer: {
-    //   screen: Drawer
-    // },
+    Societies: SocietiesScreen,
     CampusOverflow: CampusOverflowScreen,
     Profile: ProfileScreen
   },
   {
-    tabBarComponent: TabBar,
-    tabBarOptions: {
-      activeTintColor: "#000",
-      inactiveTintColor: "gray",
-      style: {
-        backgroundColor: "#fff"
-      },
-      indicatorStyle: {
-        backgroundColor: "#000"
-      }
-    }
+    // tabBarComponent: props => <TabBar {...props} />
   }
 );
 
