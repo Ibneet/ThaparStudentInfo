@@ -26,8 +26,9 @@ export default class CampusOverflow extends React.Component {
                 <Icon name="menu" />
               </Button>
               </Left>
-            
-            <Title>Campus Overflow</Title>
+            <Body>
+            <Title full>Campus Overflow</Title>
+            </Body>
            
             <Right/>
         </Header>
