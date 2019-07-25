@@ -40,7 +40,11 @@
     "react-native-search-box": "^0.0.16",
     "react-native-search-header": "^0.2.6",
     "react-native-timeago": "^0.4.0",
+    "react-native-timeline-feed": "^2.0.0",
+    "react-native-timeline-listview": "^0.2.3",
     "react-navigation": "^3.11.1",
-    "react-navigation-tabs": "^2.2.0"
+    "react-navigation-tabs": "^2.2.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4"
   }
 }

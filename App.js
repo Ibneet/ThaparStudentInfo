@@ -10,6 +10,7 @@ import FakeDataStore from "./src/data/fakeDataStore.js";
 import config from "./config.js";
 
 YellowBox.ignoreWarnings(['ListView is deprecated']);
+YellowBox.ignoreWarnings(['missing keys for items']);
 
 export default class App extends React.Component {
   constructor() {

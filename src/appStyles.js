@@ -2,7 +2,7 @@ import * as Expo from "expo";
 import { StyleSheet, Platform } from "react-native";
 
 export const Theme = {
-  primaryColor: "#333945"
+  primaryColor: "#472F2F"
 };
 
 export const DateOptions = {
