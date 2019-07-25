@@ -14,58 +14,6 @@ import {
 import { Styles } from "../../../appStyles.js";
 import Timeline from "react-native-timeline-feed"
 
-const initState = [
-  {
-    Lectures: [
-      {
-        time: "08:00", 
-        title: "Probability And Statistics", 
-        description: "Prof. RK Sharma (Lecture)"
-      },
-      {
-        time: "09:00", 
-        title: "Manfacturing Process", 
-        description: "Dr. Anuj Verma (Lecture)"
-      },
-      {
-        time: "10:00", 
-        title: "Advanced Computer Networks", 
-        description: "Prof. Maninder Singh (Lecture)"
-      },
-      {
-        time: "11:00", 
-        title: "Database Management System", 
-        description: "Dr. Sangita Roy (Lecture)"
-      },
-      {
-        time: "12:00", 
-        title: "Lunch Break", 
-        description: "And some students dont't have one so enjoy! "
-      },
-      {
-        time: "13:00", 
-        title: "Probability And Statistics", 
-        description: "Prof. RK Sharma (Lab)"
-      }
-    ],
-    Meetings: [
-      {
-        time: "17:00",
-        title: "Toasmasters Club",
-        description: "100th Meeting at NOC"
-      }
-    ],
-    OtherPlans: [
-      {
-        time: "19:00",
-        title: "Football Match",
-        description: "All the best for URJA Finals."
-      }
-    ]
-  }
-  
-]
-
 export default class Courses extends React.Component {
   constructor(props){
     super(props);
@@ -168,7 +116,7 @@ export default class Courses extends React.Component {
             <Text style={{fontSize:25, margin: Platform.OS === "ios"?35:undefined, marginTop: Platform.OS === "ios"?undefined:35,marginLeft: Platform.OS === "ios"?undefined:10, fontFamily:"Roboto_medium"}}>Hi! {this.state.name}</Text>
           </View>
           <View style={{flex:1, margin:5}}>
-            <Text style={{ fontSize:18, fontWeight:"bold", margin: 5}}>Let"s see what we have today</Text>
+            <Text style={{ fontSize:18, fontWeight:"bold", margin: 5}}>Let's see what we have today</Text>
             <View style={{backgroundColor:"pink", marginBottom: 5, borderRadius:20}}>
               <Text style={[styles.heading,{backgroundColor: "skyblue"}]}>Lectures</Text>
               <Timeline
