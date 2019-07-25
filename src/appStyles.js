@@ -17,9 +17,9 @@ export const DateOptions = {
 export const Styles = StyleSheet.create({
   HeaderStyle: {
     backgroundColor: Theme.primaryColor,
-    height: Platform.OS === 'android' ? 90 : 'default',
-    paddingTop: Platform.OS === 'android' ? 30 : 'default',
-    alignItems:Platform.OS === 'android' ? 'center' : 'default'
+    height: Platform.OS === 'android' ? 90 : undefined,
+    paddingTop: Platform.OS === 'android' ? 30 : undefined,
+    alignItems:Platform.OS === 'android' ? 'center':undefined
   },
   ContainerStyle: {
     // paddingTop: Expo.Constants.statusBarHeight,

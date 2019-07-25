@@ -124,7 +124,7 @@ export default class Schedule extends Component {
                 }
               </Body>
               <Right>
-                <TimeAgo time={item.time} interval={20000} />
+                <TimeAgo time={item.time} interval={2000} />
               </Right>
             </View>
           </ListItem>
