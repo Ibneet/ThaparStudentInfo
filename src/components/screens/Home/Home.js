@@ -14,58 +14,6 @@ import {
 import { Styles } from "../../../appStyles.js";
 import Timeline from "react-native-timeline-feed"
 
-const initState = [
-  {
-    Lectures: [
-      {
-        time: "08:00", 
-        title: "Probability And Statistics", 
-        description: "Prof. RK Sharma (Lecture)"
-      },
-      {
-        time: "09:00", 
-        title: "Manfacturing Process", 
-        description: "Dr. Anuj Verma (Lecture)"
-      },
-      {
-        time: "10:00", 
-        title: "Advanced Computer Networks", 
-        description: "Prof. Maninder Singh (Lecture)"
-      },
-      {
-        time: "11:00", 
-        title: "Database Management System", 
-        description: "Dr. Sangita Roy (Lecture)"
-      },
-      {
-        time: "12:00", 
-        title: "Lunch Break", 
-        description: "And some students dont't have one so enjoy! "
-      },
-      {
-        time: "13:00", 
-        title: "Probability And Statistics", 
-        description: "Prof. RK Sharma (Lab)"
-      }
-    ],
-    Meetings: [
-      {
-        time: "17:00",
-        title: "Toasmasters Club",
-        description: "100th Meeting at NOC"
-      }
-    ],
-    OtherPlans: [
-      {
-        time: "19:00",
-        title: "Football Match",
-        description: "All the best for URJA Finals."
-      }
-    ]
-  }
-  
-]
-
 export default class Courses extends React.Component {
   constructor(props){
     super(props);
@@ -148,15 +96,9 @@ export default class Courses extends React.Component {
         <View
           style={{
             flex: 1,
-<<<<<<< HEAD
-            backgroundColor: "black",
-            alignItems: "center",
-            justifyContent: "center"
-=======
             backgroundColor: "#EAF0F1",
             paddingTop: 5,
             paddingLeft: 5
->>>>>>> 6aa9a096dd5c124efee99a9bada54ad1338e02a7
           }}
         >
           <View style={{flexDirection:"row"}}>

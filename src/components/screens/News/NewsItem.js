@@ -7,7 +7,8 @@ import {
   Content,
   Icon
 } from "native-base";
-import Expo from 'expo'
+import Expo  from 'expo';
+import Constants from 'expo-constants';
 
 export default class NewsItem extends React.Component {
   constructor(props){
@@ -18,7 +19,7 @@ export default class NewsItem extends React.Component {
     let feed = this.props.navigation.state.params.feed;
 
     return (
-      <Container style={{paddingTop: Expo.Constants.statusBarHeight, backgroundColor: 'white'}}>
+      <Container style={{paddingTop: Constants.statusBarHeight, backgroundColor: 'white'}}>
         <View style={{height: 250}}>
           <Image source={{uri: feed.thumbnailUrl}} style={{width: null, flex: 1}}/>
           <Icon

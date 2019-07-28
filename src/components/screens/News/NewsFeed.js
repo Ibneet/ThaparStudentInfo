@@ -31,7 +31,7 @@ export default class NewsFeed extends React.Component {
   }
 
   render() {
-    var feeds = ["Feed"];
+    var feeds = ["Campus", "Global"];
     if (this.props.navigation.state.params) {
       if (this.props.navigation.state.params.feeds) {
         feeds = feeds.concat(this.props.navigation.state.params.feeds);
@@ -51,7 +51,7 @@ export default class NewsFeed extends React.Component {
               </Button>
               </Left>
             <Body>
-            <Title>My Notifications</Title>
+            <Title>Notifications</Title>
             </Body>
           <Right>
             <Button
