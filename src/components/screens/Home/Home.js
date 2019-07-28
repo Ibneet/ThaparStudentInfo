@@ -22,36 +22,37 @@ export default class Courses extends React.Component {
     }
   }
   lectures= [
+    
         {
           time: "8-9", 
           title: "Probability And Statistics", 
-          description: "Prof. RK Sharma (Lecture)",
+          description: "Prof. RK Sharma (Lecture) \nLP105",
           lineColor: "#009688",
         },
         {
           time: "9-10", 
           title: "Manfacturing Process", 
-          description: "Dr. Anuj Verma (Lecture)"
+          description: "Dr. Anuj Verma (Lecture) \nLP105"
         },
         {
           time: "10-11", 
           title: "Advanced Computer Networks", 
-          description: "Prof. Maninder Singh (Lecture)"
+          description: "Prof. Maninder Singh (Lecture) \nLP106"
         },
         {
           time: "11-12", 
           title: "Database Management System", 
-          description: "Dr. Sangita Roy (Lecture)"
+          description: "Dr. Sangita Roy (Lecture) \nLP106"
         },
         {
           time: "12-1", 
           title: "Lunch Break", 
-          description: "And some students dont't have one so enjoy! "
+          description: "And some students dont't have one so enjoy!"
         },
         {
           time: "1-3", 
           title: "Probability And Statistics", 
-          description: "Prof. RK Sharma (Lab)",
+          description: "Prof. RK Sharma (Lab) \nL408",
           lineColor: "pink",
         },
   ];
@@ -116,7 +117,7 @@ export default class Courses extends React.Component {
             <Text style={{fontSize:25, margin: Platform.OS === "ios"?35:undefined, marginTop: Platform.OS === "ios"?undefined:35,marginLeft: Platform.OS === "ios"?undefined:10, fontFamily:"Roboto_medium"}}>Hi! {this.state.name}</Text>
           </View>
           <View style={{flex:1, margin:5}}>
-            <Text style={{ fontSize:18, fontWeight:"bold", margin: 5}}>Let"s see what we have today</Text>
+            <Text style={{ fontSize:18, fontWeight:"bold", margin: 5, marginBottom:20}}>Let's see what we have today</Text>
             <View style={{backgroundColor:"pink", marginBottom: 5, borderRadius:20}}>
               <Text style={[styles.heading,{backgroundColor: "skyblue"}]}>Lectures</Text>
               <Timeline
