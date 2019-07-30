@@ -80,7 +80,7 @@ export default class EditProfile extends React.Component {
                   />}
                 autoCorrect={false}
                 padding={10}
-                onChangeText={ bio => {this.setState({hobbies})} }
+                onChangeText={ hobbies => {this.setState({hobbies})} }
             />
             <Input
                 label="Achievements"
@@ -93,7 +93,7 @@ export default class EditProfile extends React.Component {
                   />}
                 autoCorrect={false}
                 padding={10}
-                onChangeText={ bio => {this.setState({achievements})} }
+                onChangeText={ achievements => {this.setState({achievements})} }
             />
             </View>
             <Button
