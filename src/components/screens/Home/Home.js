@@ -14,7 +14,7 @@ import {
 import { Styles } from "../../../appStyles.js";
 import Timeline from "react-native-timeline-feed"
 
-export default class Courses extends React.Component {
+export default class Home extends React.Component {
   constructor(props){
     super(props);
     this.state={
@@ -78,7 +78,7 @@ export default class Courses extends React.Component {
     return (
       
       <Container style={Styles.ContainerStyle}>
-        <ScrollView>
+        
         <Header hasTabs style={Styles.HeaderStyle}>
         <Left>
               <Button
@@ -93,7 +93,7 @@ export default class Courses extends React.Component {
             </Body>
             <Right/>
         </Header>
-
+        <ScrollView>
         <View
           style={{
             flex: 1,

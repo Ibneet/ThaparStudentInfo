@@ -31,7 +31,7 @@ export default class NewsFeed extends React.Component {
   }
 
   render() {
-    var feeds = ["Feed"];
+    var feeds = ["My Campus", "Outside Campus"];
     if (this.props.navigation.state.params) {
       if (this.props.navigation.state.params.feeds) {
         feeds = feeds.concat(this.props.navigation.state.params.feeds);
@@ -65,17 +65,15 @@ export default class NewsFeed extends React.Component {
 
         <Tabs
           style={{
-            backgroundColor: Theme.primaryColor,
-            justifyContent: "flex-start"
+            backgroundColor: "#312418"
           }}
-          renderTabBar={() => <ScrollableTab />}
         >
           {feeds.map(feed => (
             <Tab
               heading={feed}
               key={feeds.indexOf(feed)}
-              tabStyle={{ backgroundColor: Theme.primaryColor }}
-              activeTabStyle={{ backgroundColor: Theme.primaryColor }}
+              tabStyle={{ backgroundColor: "#312418"}}
+              activeTabStyle={{ backgroundColor: "#312418" }}
             >
               {this.renderNewsItem(feed)}
             </Tab>

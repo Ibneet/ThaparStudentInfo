@@ -14,11 +14,11 @@ import {
 
 const main_routes = [
   {
-    title: "ABCD",
+    title: "News",
     icon: { name: "globe", type: "Ionicons" }
   },
   {
-    title: "News",
+    title: "ABCD",
     icon: { name: "notifications", type: "Ionicons" }
   },
   {
