@@ -35,6 +35,10 @@ const main_routes = [
   {
     title: "Societies",
     icon: { name: "work", type: "MaterialIcons" }
+  },
+  {
+    title: "Faculty",
+    icon: { name: "work", type: "MaterialIcons" }
   }
 ];
 
