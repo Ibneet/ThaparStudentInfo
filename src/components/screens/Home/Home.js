@@ -85,7 +85,7 @@ export default class Home extends React.Component {
                 transparent
                 onPress={() => this.props.navigation.openDrawer()}
               >
-                <Icon name="menu" />
+               <Icon name= "menu"/>
               </Button>
               </Left>
             <Body>

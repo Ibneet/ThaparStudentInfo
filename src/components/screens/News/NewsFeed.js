@@ -51,7 +51,7 @@ export default class NewsFeed extends React.Component {
               </Button>
               </Left>
             <Body>
-            <Title>My Notifications</Title>
+            <Title>Notifications</Title>
             </Body>
           <Right>
             <Button

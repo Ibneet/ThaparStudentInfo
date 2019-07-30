@@ -7,8 +7,8 @@ import {
   Content,
   Icon
 } from "native-base";
-import Expo from 'expo'
-import Constants from 'expo-constants'
+import Expo  from 'expo';
+import Constants from 'expo-constants';
 
 export default class NewsItem extends React.Component {
   constructor(props){
