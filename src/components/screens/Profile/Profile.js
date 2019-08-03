@@ -79,7 +79,7 @@ export default class Profile extends React.Component {
     let achievements = this.props.navigation.getParam("achievements", "empty")
     return(
         <Container style={Styles.ContainerStyle}>
-            <Header style={{height:200, backgroundColor:"#472F2F",flexDirection:"column",paddingTop: Platform.OS === 'android' ? 50 : 40}}>
+            <Header style={{height:200, backgroundColor:"#523A5C",flexDirection:"column",paddingTop: Platform.OS === 'android' ? 50 : 40}}>
               <View style={{flexDirection:"row"}}>
                 <Button
                   transparent

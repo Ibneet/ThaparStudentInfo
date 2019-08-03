@@ -42,21 +42,6 @@ const main_routes = [
   }
 ];
 
-const other_routes = [
-  {
-    title: "Settings",
-    icon: { name: "cog", type: "Ionicons" }
-  },
-  {
-    title: "Feedback",
-    icon: { name: "feedback", type: "MaterialIcons" }
-  },
-  {
-    title: "Legal Notice",
-    icon: { name: "legal", type: "FontAwesome" }
-  }
-];
-
 const userList = {
   "123": "Tom",
   "124": "Michael",
@@ -103,8 +88,6 @@ export default class SideBar extends React.Component {
             }}
           />
           {this.renderList(main_routes, 150)}
-
-          {this.renderList(other_routes, 0)}
         </Content>
       </Container>
     );

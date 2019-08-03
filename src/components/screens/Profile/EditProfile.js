@@ -97,7 +97,7 @@ export default class EditProfile extends React.Component {
             />
             </View>
             <Button
-            style={{marginTop:20,backgroundColor:"#472F2F"}}
+            style={{marginTop:20,backgroundColor:"#523A5C"}}
             full
             rounded
             onPress={()=>{this.props.navigation.navigate("Profile",{name:this.state.name,bio:this.state.bio,hobbies:this.state.hobbies, achievements:this.state.achievements})}}

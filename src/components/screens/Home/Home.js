@@ -53,7 +53,7 @@ export default class Home extends React.Component {
           time: "1-3", 
           title: "Probability And Statistics", 
           description: "Prof. RK Sharma (Lab) \nL408",
-          lineColor: "pink",
+          lineColor: "#7CEC9F",
         },
   ];
   Meetings= [
@@ -61,7 +61,7 @@ export default class Home extends React.Component {
       time: "5-7",
       title: "Toasmasters Club",
       description: "100th Meeting at NOC",
-      lineColor: "#EC4849"
+      lineColor: "#F5BCBA"
     }
   ]
   OtherPlans= [
@@ -114,12 +114,12 @@ export default class Home extends React.Component {
                 />
                 </View>
             </TouchableOpacity>   
-            <Text style={{fontSize:25, margin: Platform.OS === "ios"?35:undefined, marginTop: Platform.OS === "ios"?undefined:35,marginLeft: Platform.OS === "ios"?undefined:10, fontFamily:"Roboto_medium"}}>Hi! {this.state.name}</Text>
+            <Text style={{fontSize:25, margin: Platform.OS === "ios"?35:undefined, marginTop: Platform.OS === "ios"?undefined:35,marginLeft: Platform.OS === "ios"?undefined:10, fontFamily:"Roboto_medium", color: "#2C3335"}}>Hi! {this.state.name}</Text>
           </View>
           <View style={{flex:1, margin:5}}>
             <Text style={{ fontSize:18, fontWeight:"bold", margin: 5, marginBottom:20}}>Let's see what we have today</Text>
-            <View style={{backgroundColor:"pink", marginBottom: 5, borderRadius:20}}>
-              <Text style={[styles.heading,{backgroundColor: "skyblue"}]}>Lectures</Text>
+            <View style={{backgroundColor:"#7CEC9F", marginBottom: 5, borderRadius:20}}>
+              <Text style={[styles.heading,{backgroundColor: "#10A881"}]}>Lectures</Text>
               <Timeline
                     data={this.lectures}
                     innerCircleType="icon"
@@ -130,8 +130,8 @@ export default class Home extends React.Component {
                     descriptionStyle={{color:"gray"}}
                   />
               </View>
-              <View style={{backgroundColor:"#EC4849", marginBottom: 5, borderRadius:20}}>
-              <Text style={[styles.heading,{backgroundColor:'#B83227'}]}>Meetings</Text>
+              <View style={{backgroundColor:"#F5BCBA", marginBottom: 5, borderRadius:20}}>
+              <Text style={[styles.heading,{backgroundColor:'#EA7773'}]}>Meetings</Text>
               <Timeline
                     data={this.Meetings}
                     innerCircleType="icon"
