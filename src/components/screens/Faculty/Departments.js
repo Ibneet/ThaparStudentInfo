@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 /**
  * 
  *  Use useState hook to manage local state. Avoid classes.
@@ -11,7 +10,7 @@ import { Container, Header, Icon, Button, Left, Body, Title, Right } from 'nativ
 
 import {  Styles } from '../../../appStyles.js'
 import {View, Text, StyleSheet } from "react-native";
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 const People =({navigation})=> {
   const [state, updateState] = useState({
@@ -38,15 +37,23 @@ const People =({navigation})=> {
               <Body>
               <Title>FACULTY</Title>
               </Body>
-              <Right/>
+              <Right>
+              <Button
+                  transparent
+                >
+                  <Icon name="search" />
+                </Button>
+              </Right>
         </Header>
           <View padder style={styles.container}>
             <Text style={styles.text}>SELECT</Text>
-          {["COMPUTER", "MECHANICAL", "CIVIL", "ELECTRICAL", "CHEMICAL", "BIOTECH"].map(element=>(
+      <ScrollView>
+      {["COMPUTER", "MECHANICAL", "CIVIL", "ELECTRICAL", "CHEMICAL", "BIOTECH"].map(element=>(
              <TouchableOpacity key={element} style={styles.button} onPress={sampleMethod}>
              <Text style={styles.text}>{element}</Text>
            </TouchableOpacity>
           ))}
+      </ScrollView>
           </View>
       </Container>
     );
