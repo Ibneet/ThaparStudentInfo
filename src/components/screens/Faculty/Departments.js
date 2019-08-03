@@ -1,10 +1,4 @@
 import React, {useState} from 'react';
-/**
- * 
- *  Use useState hook to manage local state. Avoid classes.
- * I have written the sampe for the useState below. Follow that.
- *  
- *   */
 
 import { Container, Header, Icon, Button, Left, Body, Title, Right } from 'native-base';
 
@@ -12,7 +6,7 @@ import {  Styles } from '../../../appStyles.js'
 import {View, Text, StyleSheet } from "react-native";
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
-const People =({navigation})=> {
+const Departments =({navigation})=> {
   const [state, updateState] = useState({
     sampleState: 0
   })
@@ -49,7 +43,7 @@ const People =({navigation})=> {
             <Text style={styles.text}>SELECT</Text>
       <ScrollView>
       {["COMPUTER", "MECHANICAL", "CIVIL", "ELECTRICAL", "CHEMICAL", "BIOTECH"].map(element=>(
-             <TouchableOpacity key={element} style={styles.button} onPress={sampleMethod}>
+             <TouchableOpacity key={element} style={styles.button} onPress={()=>navigation.push('Teachers')}>
              <Text style={styles.text}>{element}</Text>
            </TouchableOpacity>
           ))}
@@ -79,4 +73,4 @@ const styles = StyleSheet.create({
     width: 300
   }
 })
-export default People
+export default Departments
