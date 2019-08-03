@@ -2,6 +2,7 @@ import { createStackNavigator } from "react-navigation";
 
 import Departments from "./Departments";
 import Teacher from "./Teacher";
+import TeacherDetails from "./TeacherDetails"
 
 export default (TeacherScreen = createStackNavigator(
   {
@@ -11,6 +12,10 @@ export default (TeacherScreen = createStackNavigator(
     },
     Teachers: {
       screen: Teacher,
+      navigationOptions: { header: null }
+    },
+    TeacherDetails: {
+      screen: TeacherDetails,
       navigationOptions: { header: null }
     },
   },
